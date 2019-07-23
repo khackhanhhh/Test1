@@ -141,13 +141,57 @@
         <section>
             <h3>Comments</h3> ... 
         </section>
-        </article>
-        <h4></4>Thanh điều hướng dùng nav</h4>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Login</a>
-            <a href="#">Logout</a>
-        </nav>
+    </article>
+    <h4></4>Thanh điều hướng dùng nav</h4>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Login</a>
+        <a href="#">Logout</a>
+    </nav>
+    <input id="label" type="checkbox" name="Cats">
+        <label for="label" >Sử dụng label!</label>
+    
+        <form id="form1" name="form1" oninput="out1.value = parseInt(in1.value, 10) + parseInt(in2.value,10)">
+            <fieldset>
+                <legend>Output Example</legend>
+                <input type="number" id="in1" name="in1" value="0">
+                <br/>
+            +
+            <input type="number" id="in2" name="in2" value="0">
+            </fieldset>
+        </form>
+        <output name="out1" for="in1 in2" form="form1">0</output> <br> <br>
+        
+        <audio controls>
+            <source src="audio".mp3" type="audio/mpeg"> 
+        </audio>
+        
+        <video width="400" height="200" controls autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            </video> <br>
+        Tiến trình
+        <progress value="22" max="100"></progress> <br>
+        Menu bằng select
+        <select name="" >
+            <optgroup label="number">
+                <option value="1">One</option>
+                <option value="2" selected>Two</option>
+                <option value="3">Three</option>
+            </optgroup>
+            <optgroup label="char" disabled>
+                <option value="a">a</option>
+                <option value="b">b</option>
+            </optgroup>
+        </select> <br>
 
+        input datalist 
+        <input list="Languages">
+            <datalist id="Languages">
+                <option value="PHP">
+                <option value="Perl">
+                <option value="Python">
+                <option value="Ruby">
+                <option value="C+">
+            </datalist>
 </body>
 </html>
