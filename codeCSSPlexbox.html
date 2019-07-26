@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plexbox</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            background-color: blue;
+        }
+        .flex-container > div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            width: 100px;
+        }
+        .flex-container1{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            height: 300px;
+        }
+        .flex-container1 > div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+        <p>Dùng direction = column</p>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+        </div>
+
+        <p>Dùng direction: row and flex-wrap: wrap <br>
+            or flex-flow: row wrap <br>
+            and justify-content: center;
+        </p>
+        <div class="flex-container1">
+            <div style="order: 2">1</div>
+            <div style="order: 1">2 </div>
+            <div style="order: 4">3</div>  
+            <div style="order: 3">4</div>  
+            <div style="order: 6">5</div>  
+            <div style="order: 5">6</div>  
+        </div>
+
+        <p>Dùng flex-grow để tăng độ rộng của 1 phần tử</p>
+        <div class="flex-container1">
+            <div style="flex-grow: 0.5">1</div>
+            <div style="flex-grow: 0.5">2</div>
+            <div style="flex-grow: 2">3</div> 
+            <div style="flex-grow: 0.5">4</div>
+        </div>
+        
+        <p>Dùng flex-shrink để chỉnh độ co lại 1 phần tử</p>
+        <div class="flex-container1 " style="flex-wrap: nowrap" >
+            <div>1</div>
+            <div>2</div>
+            <div>3</div> 
+            <div style="flex-shrink: 0">4</div>
+        </div>
+
+        <p>Dùng flex-basis để chỉnh độ dài ban đầu của 1 phần tử</p>
+        <div class="flex-container1" >
+            <div>1</div>
+            <div>2</div>
+            <div>3</div> 
+            <div style="flex-basic: 10px">4</div>
+        </div>
+</body>
+</html>
