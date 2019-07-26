@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo CSS</title>
+    <link rel="stylesheet" 
+        type="text/css"
+        href=" myStyle.css"/>
+    <style type = "text/css">
+        body {
+        perspective: 1000;
+        -webkit-perspective: 1000;
+        }
+        #box1, #box2, #box3, #box4, #box5{
+        width: 100px;
+        height: 80px;
+        border: 3px solid black;
+        background-color: yellow;
+        }
+        #box2 {
+        transform: rotateX(45deg);
+        -webkit-transform: rotateX(45deg);
+        }
+        #box3 {
+        transform: rotateX(89deg);
+        -webkit-transform: rotateX(89deg);
+        }
+        #box4 {
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+        }
+        #box5 {
+        transform: rotate3D(1, 2, 0, 45deg);
+        -webkit-transform: rotate3D(1, -1, 0, 45deg);
+        }
+        h1 { color: black font-size: 300%; transition:color 1s ease-in; }
+        h1:hover { color: red; }
+        #box { transition: all 1s ease-in; height: 100px; width: 100px; border:
+        1px solid black; }
+        #box:hover { transform: rotate(180deg); }
+
+        
+    </style>
+</head>
+<body>
+    <h4 style=" border: 2px red double;
+                color: red;"> 
+                Định nghĩa trực tiếp trong thẻ 
+    </h4>
+
+    <h1>Dùng file css riêng</h1>
+    <p>
+        Hello ^^
+    </p>
+    <p>
+        Khanh Kun tạo file css riêng
+    </p>
+    <p style="font-size: 300%;
+            text-shadow: 5px 5px 2px #cccccc;">
+        Đổ bóng text-shadow
+    </p>
+    <h1>3D Transform Demo</h1>
+    <div id = "box1">box 1</div>
+    <div id = "box2">box 2</div>
+    <div id = "box3">box 3</div>
+    <div id = "box4">box 4</div>
+    <div id = "box5">box 5</div>
+    <div id = "box">Box 1</div>
+
+    
+</body>
+</html>
